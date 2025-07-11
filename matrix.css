@@ -1,0 +1,150 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+@font-face {
+  font-family: 'fortnite'; 
+  src: url('https://cdn.glitch.global/ee909c95-4336-4a70-9907-089742217652/mainframe-opto.ttf?v=1652777610926');
+}
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+body {
+  background-image: url(https://cdn.glitch.global/ee909c95-4336-4a70-9907-089742217652/matrixbg.gif?v=1652773444387);
+  color: black;
+  font-family: "fortnite", serif; 
+  text-align: center; 
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+input {
+  -webkit-box-shadow: 5px 5px 19px 0 rgba(0,0,0,0.7); 
+  box-shadow: 5px 5px 19px 0 rgba(0,0,0,0.7);
+  height: 30px;
+  width: 20%;
+  font-size: 20px;
+  text-align: center; 
+font-family: "fortnite", serif; 
+  margin: 10px 20px 10px 10px;
+}  
+
+label {
+  text-shadow: 3px 3px 7px rgba(0,0,0,1);
+}  
+
+#title {
+  color: green;
+  margin: 5% 10% 2% 10%;
+  
+  /* Chrome, Safari, Opera 
+  -webkit-animation: rainbow 5s infinite; 
+  
+   Standar Syntax 
+  animation: rainbow 5s infinite; */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+iframe {
+  max-width: 80%;
+ border: 10px ridge;
+  animation: rainbowB 1s infinite;
+}
+/* red top, green right, blue bottom and yellow left */
+@-webkit-keyframes rainbowB{
+  	
+  0%{border-color: #F7A8B8 #55CDFC #F7A8B8 #55CDFC;}
+  25%{border-color: #F7A8B8}
+  50%{border-color:  #55CDFC #F7A8B8 #55CDFC #F7A8B8}
+  75%{border-color: #55CDFC;}
+  100%{border-color: #F7A8B8 #55CDFC #F7A8B8 #55CDFC;}
+  
+  /*0%{border-color: purple;}	
+	10%{color: red;}
+  20%{color: CadetBlue;}
+	30%{color: yellow;}
+  40%{color: coral;}
+	50%{color: green;}
+  60%{color: cyan;}
+  70%{color: DeepPink;}
+  80%{color: DodgerBlue;}
+	90%{color: orange;}
+  100%{color: purple;}*/
+}
+
+button {
+  font-family: "fortnite", serif; 
+  letter-spacing: 1px;
+  color: black;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 5px 7px;
+ /* animation-name: button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;*/
+}  
+
+button:hover {
+  background-color: rgba(255, 255, 255, .75);
+  padding: 7px 10px;
+  font-size: 20px;
+}
+
+
+
+@keyframes button {
+  0%   {padding: 5px 7px; font-size: revert;}
+  50% {padding: 7px 10px; font-size: 20px;}
+  100%   {padding: 5px 7px; font-size: revert;}
+}
+
+#mainForm {
+     border: 5px double white;
+    background: linear-gradient(
+215deg
+, rgba(5,8,64,1) 20%, rgba(39,39,87,1) 43%, rgba(159,159,175,1) 100%);
+    padding: 50px;
+    margin: 30px;
+    width: calc(30% - 30px);
+    position: absolute;
+    left: 30%;
+    overflow: hidden;
+    height: 30%;
+}
+
+#mainI {
+  float: left;
+  margin: 0px 60px;
+  width: 40%;
+}
+
+#mainP {
+/*padding-top: 5%;*/
+}
+
+#link {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  height: 20%;
+}
