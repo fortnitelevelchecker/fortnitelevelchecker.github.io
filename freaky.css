@@ -3,7 +3,7 @@
    "how to change link color." */
 @font-face {
   font-family: 'fortnite'; 
-  src: url('https://cdn.glitch.global/ee909c95-4336-4a70-9907-089742217652/fortnite.otf?v=1648023705612');
+  src: url('data/fortnite.otf');
 }
 
 /* Style the header with a grey background and some padding */
