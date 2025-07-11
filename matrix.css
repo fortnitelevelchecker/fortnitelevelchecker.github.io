@@ -3,7 +3,7 @@
    "how to change link color." */
 @font-face {
   font-family: 'fortnite'; 
-  src: url('https://cdn.glitch.global/ee909c95-4336-4a70-9907-089742217652/mainframe-opto.ttf?v=1652777610926');
+  src: url('data/mainframe-opto.ttf');
 }
 
 #main {
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url(https://cdn.glitch.global/ee909c95-4336-4a70-9907-089742217652/matrixbg.gif?v=1652773444387);
+  background-image: url(data/matrixbg.gif);
   color: black;
   font-family: "fortnite", serif; 
   text-align: center; 
