@@ -16,14 +16,14 @@ var today = new Date();
 
 
 // Get the target date
-var finDate = new Date(2025, 5, 7);
+var fortniteDate = new Date(2025, 7, 8);
 
 // Get the number of milliseconds in 1 day
 var dayMilliseconds = 1000 * 60 * 60 * 24;
 
 // Get the remaining amount of days
 var remainingDays = Math.ceil(
-  (finDate.getTime() - today.getTime()) / dayMilliseconds
+  (fortniteDate.getTime() - today.getTime()) / dayMilliseconds
 );
 
 if (document.cookie.length!=0){
@@ -34,18 +34,38 @@ if (document.cookie.length!=0){
 daysTotall.innerHTML = remainingDays;
 
 function newDay(){
-   finDate = new Date(2025, 5, 7);
+   fortniteDate = new Date(2025, 5, 7);
  remainingDays = Math.ceil(
-  (finDate.getTime() - today.getTime()) / dayMilliseconds
+  (fortniteDate.getTime() - today.getTime()) / dayMilliseconds
 );
 daysTotall.innerHTML = remainingDays;
 }
 
+function getSeventeenth() {
+  const today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth();
 
+  // If today is past the 17th, move to next month (handle December rollover)
+  if (today.getDate() > 17) {
+    month += 1;
+    if (month > 11) {
+      month = 0;
+      year += 1;
+    }
+  }
+  return new Date(year, month, 17);
+}
 
+// Use dynamic 17th date
+var seventeenthDate = getSeventeenth();
 jojoDayss.innerHTML = Math.ceil(
-  (new Date(2025, 5, 18).getTime() - today.getTime()) / dayMilliseconds
+  (seventeenthDate.getTime() - today.getTime()) / dayMilliseconds
 );
+
+/* jojoDayss.innerHTML = Math.ceil(
+  (new Date(2025, 5, 18).getTime() - today.getTime()) / dayMilliseconds
+); */
 
 function compute() {
   var num = document.getElementById("lvl").value;
