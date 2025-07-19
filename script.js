@@ -8,12 +8,8 @@ var dayz200 = document.getElementById("days200");
 
 var jojoDayss = document.getElementById("jojoDays");
 
-//GET https: api.fortnitetracker.com/v1/profile/all/whereyobaldat
-//X-API-Key: 0b6cfdb6-7120-4286-9c14-9cbe819a0f7d
-
 // Get the current date
 var today = new Date();
-
 
 // Get the target date
 var fortniteDate = new Date(2025, 7, 8);
